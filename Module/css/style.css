@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrap{
+	height: 100vh;
+}
+.sqr{
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	margin:  auto;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.sqr2{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin:  auto;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	transform: rotate(-45deg);
+}
+
+.row{
+	visibility: hidden;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: green;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+@keyframes loader {
+  0% {transform:rotate(-45deg)}
+  50%{transform:rotate(-135deg)}
+  100%{transform:rotate(-225deg)}}
+
+  .loader {
+  animation: loader 2s infinite ease-in-out;
+}
